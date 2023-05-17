@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="복용 리스트"
+        app:titleTextColor="@color/white">
+
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".List_Activity"
+        android:padding="10dp">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="복용중인 건강기능식품을 입력하세요!"
+        android:textSize="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_below="@+id/text"
+        android:hint="건강기능식품명"/>
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_below="@+id/name"
+        android:hint="섭취량"/>
+
+        <EditText
+            android:id="@+id/caution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_below="@+id/amount"
+            android:hint="주의사항 및 메모" />
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="건강기능 식품 추가"
+            android:textSize="24dp"
+            android:layout_below="@+id/caution"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="복용 리스트 보기"
+            android:textSize="24dp"
+            android:layout_below="@+id/btnInsert"
+            android:layout_marginTop="20dp" />
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/alarm"
+        android:icon="@drawable/ic_baseline_access_alarm_24"
+        android:title="알림"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/list"
+        android:icon="@drawable/ic_baseline_list_24"
+        android:title="리스트"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/information"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="성분별 상세정보"
+        app:showAsAction="always"/>
+</menu>
